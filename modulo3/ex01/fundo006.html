@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento teste</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /* Shorthand - background 
+               color > image > position > repeat > [size] > attachment
+
+               OBS: em teoria o posicionamento do [size] está correto, mas em prática, alguns navegadores não estão aceitando essa posição no shorthand (até a atual data 11/02/2026), sendo necessário então declarar o size abaixo da shorthand
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: aliceblue;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,7 +38,28 @@
     <main>
         <h1>Teste de Imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nostrum nesciunt voluptates aspernatur dolorem assumenda corporis quisquam sapiente. Adipisci ipsam, facere voluptatem labore amet dolore ex officiis earum sed obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, quis exercitationem rem, minima eos in non temporibus, alias aperiam saepe nobis obcaecati explicabo nam maiores quibusdam voluptatibus laboriosam dolorem odit.
-        Magni ex cumque quaerat, dolore, eaque eos vel aliquid praesentium cupiditate quae alias a aut ea fuga asperiores. Voluptatem reiciendis cum voluptatum possimus suscipit vero sint facere ex nulla quas!</p>
+        Magni ex cumque quaerat, dolore, eaque eos vel aliquid praesentium cupiditate quae alias a aut ea fuga asperiores. Voluptatem reiciendis cum voluptatum possimus suscipit vero sint facere ex nulla quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error nesciunt fuga vel, tenetur nostrum asperiores possimus expedita quibusdam, nobis in. Repellat totam explicabo praesentium perspiciatis dolorum rerum voluptates in.
+        Incidunt quae unde dolor atque. Non fugit nam aspernatur enim error dicta magnam et sequi itaque ipsa quas laboriosam, reiciendis voluptates? Libero quod eum eligendi dicta beatae omnis quam fugit!
+        A debitis voluptas cumque molestiae quis. Pariatur labore delectus vitae iste sit. Quaerat, magni quisquam omnis quos maiores hic tempore magnam adipisci. Reiciendis natus mollitia, rerum fugiat voluptas alias? Hic.
+        Error omnis magnam dicta quisquam molestias earum facere minima quas alias fuga? Eius, maxime fugit perspiciatis dolorum, nesciunt provident dignissimos, quam recusandae voluptatibus magni debitis et odit! Aspernatur, ipsum qui?
+        Quis maxime repudiandae maiores laborum cum rem incidunt praesentium laboriosam dolor aperiam ad, sed nesciunt in, asperiores recusandae ducimus architecto dicta odio deserunt inventore hic unde qui autem exercitationem. Aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui molestiae dolorem assumenda in nostrum blanditiis, laboriosam nobis magnam, provident repellendus consectetur labore suscipit quasi dolores iusto praesentium? Ullam, debitis perspiciatis!
+        Nihil aliquid accusantium laboriosam, earum ipsa vero exercitationem ullam alias. Odit facere nemo sapiente libero. Fuga laboriosam tempora veritatis exercitationem odio, consequuntur similique quia iusto nostrum deleniti suscipit non accusamus.
+        Autem pariatur praesentium, officia ad repellat itaque? Deserunt necessitatibus dicta nihil sequi eum. Beatae praesentium ab alias eveniet neque modi repellat quam excepturi labore, fugiat delectus omnis inventore at autem.
+        Magni eligendi aliquid quo nihil ad obcaecati cumque, provident minima alias aliquam vel inventore error. Nesciunt excepturi harum ad odit animi doloremque nam laboriosam velit eaque? Nam rerum sapiente perspiciatis.
+        Eum nobis expedita animi voluptas libero esse repellat quas iure quos nisi blanditiis molestias sequi tenetur amet hic quis ea dolore, ipsa non quasi consectetur maiores? Assumenda earum quas repellat!
+        Facilis enim eveniet natus exercitationem reiciendis aperiam voluptates quas rerum at nam? Illum, qui. Nulla laborum fuga quaerat natus doloribus laudantium aspernatur eligendi tempora architecto, dolore et temporibus, pariatur incidunt.
+        Eveniet, ipsa aspernatur? Impedit in incidunt temporibus odio eveniet minus, commodi facere maxime voluptates assumenda, non nobis, consequuntur repellendus voluptatibus culpa ex voluptas officia laboriosam. Ut excepturi adipisci itaque sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quasi! Recusandae neque nisi iure ad delectus consequatur, sapiente, modi nam numquam eligendi molestiae repellat at quas suscipit, quo accusamus debitis.
+        Repellat, temporibus expedita. Dolores vero expedita beatae impedit facilis a saepe obcaecati, minima sint exercitationem ut autem repellat nihil, iure architecto et repellendus praesentium illo suscipit! Distinctio laboriosam minus tempore?
+        In, amet! Cum natus mollitia quos provident quia praesentium saepe recusandae quo, reprehenderit soluta, laboriosam numquam ipsa voluptatem in debitis distinctio dolores doloremque ducimus odit eius maxime, neque dignissimos consectetur.
+        Voluptas delectus fugiat odio nulla ullam fuga nobis non dolore unde ipsa assumenda quis aut itaque ipsum porro vel magni sapiente laborum vitae, impedit in! Quam alias neque quas perferendis.
+        Cumque, natus quam magni vero animi labore repellat maiores quo incidunt ratione sunt amet corporis reprehenderit ipsum quibusdam atque. Soluta ducimus fuga provident error ipsum pariatur doloribus porro explicabo at.
+        Aut tempore dolorum quas, maiores perferendis nulla amet, voluptatum at voluptatibus nihil, odit itaque soluta eum? Unde, voluptas placeat eveniet, suscipit molestias error quasi natus, vitae accusantium fuga sapiente culpa!
+        Eligendi deleniti eius quisquam vero, repudiandae earum omnis, temporibus architecto dignissimos, accusantium quas harum non? Debitis unde dignissimos at, magni in ipsa, ab amet neque distinctio dolor cupiditate, officiis consequuntur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat libero, facere, hic tempora at architecto blanditiis doloremque iure ea fugit porro inventore unde, itaque natus laudantium! Facere saepe dolorum quidem.
+        A perferendis earum quos rerum voluptatem ipsum recusandae non, dolorem repellendus necessitatibus et ipsam architecto esse ad nemo vel, similique odit consequatur praesentium. Ea laboriosam quas molestiae, libero vero a!
+        Enim corporis, quidem ad at porro, ullam tempore corrupti nemo hic officiis a ab, itaque ut obcaecati labore. Error fuga obcaecati similique cupiditate molestias modi nulla totam unde quam rem!
+        Obcaecati optio perferendis dignissimos aliquam modi, tenetur assumenda illum consequuntur odit veritatis reprehenderit saepe tempora perspiciatis enim et dolores fugit numquam, amet quo omnis commodi. Natus sequi minus officiis voluptas?
+        Repellat accusantium deserunt laborum expedita sit excepturi explicabo, earum, iusto sed debitis saepe commodi soluta dolorum asperiores eaque. Labore fugit deleniti sint similique quaerat sit tenetur! Perferendis, quod inventore? Itaque.
+    </p>
     </main>
 </body>
 </html>
