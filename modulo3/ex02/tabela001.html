@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse; /*O border-collapse é utilizado para eliminar os espaços entre as bordas das células, deixando a tabela mais compacta e organizada. Sem ele, as bordas das células podem parecer separadas, o que pode dar um aspecto desorganizado à tabela. Com o border-collapse: collapse, as bordas das células se fundem, criando uma aparência mais limpa e profissional.*/           
+        }
+
+        tr.linha {
+            background-color: gray;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px
+        }
+
+        .dado {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1> <!--Tabelas são criadas com o intuito de organizar dados em linhas e colunas-->
+    <table>
+        <tr class=""> <!--PRIMEIRA LINHA-->
+            <td>A1</td> 
+            <td>B1</td> <!--O fechamento das tags tr e td são opcionais-->
+            <td>C1</td>
+        </tr>
+        <tr> <!--SEGUNDA LINHA-->
+            <td>A2</td>
+            <td>B2</td> <!--Se caso a hierarquia não for corretamente seguida os dados podem ser exibidos de forma incorreta-->
+            <td>C2</td>
+        </tr>
+        <tr class="linha"> <!--TERCEIRA LINHA-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--QUARTA LINHA-->
+            <td class="dado">A4</td>
+            <td class="dado">B4</td>
+            <td class="dado">C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+</body>
+</html>
