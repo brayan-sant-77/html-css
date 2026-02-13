@@ -1,13 +1,19 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: 'TypoSlab';
-    src: url('fonts/typoslab_irregular/TypoSlab\ Irregular\ Demo.otf') format(opentype);
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte3: 'Caveat', cursive, sans-serif;
 }
 
 * { /* Seletor universal. Essa configuração faz com que o texto fique grudado ao começo da página*/
     margin: 0px;
-    padding: 0px
+    padding: 0px;
+    font-size: em;
 }
 
 html, body { /*HTML e Body irão receber uma mesma configuração*/
@@ -23,8 +29,10 @@ header {
 }
 
 header h1 {
+    font-family: var(--fonte1);
     padding-top: 50px;
     font-variant: small-caps; /* Deixa as letras em caixa alta, mas com a altura de uma letra minúscula */
+    font-size: 10vw;
 }
 
 header > p {
@@ -46,6 +54,10 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+    font-weight: bold;
+
 }
 
 .normal {
@@ -59,7 +71,7 @@ section {
 }
 
 .imagem p {
-    width: 400px;
+    display: inline-block; /*A caixa em volta se adapta ao tamanho do texto dentro dela*/
     background-color: rgba(0, 0, 0, 0.254);
 }
 
