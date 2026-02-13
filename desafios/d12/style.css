@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 
-:root {
+:root { /* Variáveis CSS. Elas são definidas dentro do seletor :root, que é o elemento raiz do documento (equivalente ao html). O uso de variáveis torna o código mais fácil de manter e reutilizar, pois permite definir um valor uma vez e usá-lo em vários lugares. */
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte3: 'Caveat', cursive, sans-serif;
 }
@@ -60,19 +60,39 @@ section {
 
 }
 
+section p {
+    padding-bottom: 2em;
+}
+
 .normal {
     background-color: white;
     color: black;
 }
 
-.imagem {
+.imagem{
     background-color: rgb(32, 32, 32);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed; /* Faz com que a imagem de fundo fique fixa, mesmo quando a página for rolada (Efeito Paralax)*/
+}
+
+#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+
+}
+
+#img02 {
+    background-image: url('imagens/background002.jpg');
+    
 }
 
 .imagem p {
     display: inline-block; /*A caixa em volta se adapta ao tamanho do texto dentro dela*/
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.254);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
