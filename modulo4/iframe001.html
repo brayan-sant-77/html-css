@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title> 
+    <style>
+        iframe{ /*A ALTURA QUE SERÁ CONSIDERADA PRIMEIRO, SERÁ AS DA CSS, SE NÃO FOR DEFINIDA NO HTML, CASO NÃO SEJA DEFINIDA EM NENHUMA, SERÁ CONSIDERADO O VALOR PADRÃO DE 300X150*/
+            width: 400px;
+            height: 300px;
+            border: 2px solid black
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <p>
+        Acessando o site do
+        
+        <!-- Tamanho padrão do iframe é de 300x150-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="auto"> <!-- O atributo scrolling é usado para controlar a exibição de barras de rolagem no iframe. O valor "no" indica que as barras de rolagem não devem ser exibidas, mesmo que o conteúdo do iframe seja maior do que a área visível. -->
+            <a href="https://www.cursoemvideo.com" target="_blank"> Curso em Video</a>
+        </iframe> <!-- O atributo frameborder é usado para remover a borda do iframe, deixando-o mais integrado ao conteúdo da página. -->
+        
+        para aprender a programar
+    </p>
+
+    <p> 
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500">
+            <a href="https://gustavoguanabara.github.io" target="_blank"> No Github</a> <!--Isso é usado caso o iframe não funcione corretamente no navegador do usuário-->
+        </iframe>
+
+        também é bem legal
+</body>
+</html>
