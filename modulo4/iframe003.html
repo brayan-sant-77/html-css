@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        iframe {
+            border-radius: 15px;
+           
+        }
+        #tela {
+            width: 95%;
+            border: 2px solid black;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit aperiam aliquam itaque blanditiis inventore iusto eum dicta placeat, quo cum. Facere, maiores ea beatae nam non eos explicabo dolorum dignissimos.</p>
+
+    <ul>
+        <li><a href="pgnextras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="pgnextras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="pgnextras/pag003.html" target="frame">Terceira Página</a></li> <!--É MUITO IMPORTANTE QUE O ATRIBUTO TARGET DO LINK SEJA IGUAL AO NOME DO IFRAME-->
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam commodi illum esse soluta natus vero fugiat tempora! Aut quae nemo consequuntur quis, obcaecati, sequi numquam sit eius, voluptas debitis placeat.
+    Suscipit saepe ipsa tempora, molestiae veritatis illum sed est laborum assumenda numquam reprehenderit natus hic maiores provident obcaecati error laudantium nisi! Suscipit commodi voluptatem aliquid atque dolor quibusdam amet repudiandae.</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Bem-vindo!</h1><p>Escolha uma das opções acima para carregar o conteúdo aqui.</p>"> <!-- O atributo srcdoc é usado para fornecer um conteúdo alternativo para o iframe, caso o navegador não suporte iframes ou se o conteúdo do iframe não puder ser carregado. -->
+        <p>Infelizmente seu navegador não suporta iframes.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum quasi autem consequuntur maxime ipsa ducimus esse hic perspiciatis quo magni laboriosam, voluptas in voluptate ex beatae! Laboriosam, quod adipisci!
+    Eos, iure temporibus rerum facilis eveniet id ex quia libero sit animi ipsum illo quod fugit nisi deserunt, esse quam ducimus perspiciatis atque. Voluptatibus porro, totam deleniti atque sint magnam.</p>
+</body>
+</html>
