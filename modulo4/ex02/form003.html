@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário</title> 
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Teste de Formulaŕio</h1>
@@ -13,7 +25,7 @@
             <input type="text" name="nome" id="nome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
         </p>
         <p>
-            <label for="imedia">Média</label>
+            <label for="imedia" id="media">Média</label>
             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1"  value="5"> <!--O step funciona pra quantidade que o número pode ser pulado, ou seja, em caso de média ele vai pular de 0.1 em 0.1 EX: 5.1 -> 5.2-->
         </p>
         <p>
@@ -22,7 +34,7 @@
         </p>
         <p>
             <label for="idia">Dia da Prova</label>
-            <input type="date" name="dia" id="idia" value="2026-02-25">
+            <input type="date" name="dia" id="idia" value="2026-02-25" required>
         </p>
         <p>
             <label for="ihora">Hora da Prova:</label>
