@@ -10,25 +10,28 @@
 
             /*Flexbox (Elemento Pai)*/
             display: flex;
+            flex-flow: nowrap;
+        
         }
 
         .item {
             background-color: lightcyan;
             border: 1px solid black;
             text-align: center;
+            padding: 10px;
+            flex: auto; /* Ele remove os espaços em branco*/
 
-            /*Flexbox (Elemento Filho)*/
-            flex: auto;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+        <div class="item">Exemplo de bloco 1</div>
+        <div class="item">Exemplo de bloco 2</div>
+        <div class="item">Exemplo de bloco 3</div>
+        <div class="item">Exemplo de bloco 4</div>
+        <div class="item">Exemplo de bloco 5</div>
+        <div class="item">Exemplo de bloco 6</div>
     </div>
 </body>
 </html>
